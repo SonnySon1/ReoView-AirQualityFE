@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    background-color: #040013;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* navbar */
+.header{
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.title{
+    font-size: 21px;
+    font-weight: 600;
+}
+.navbar{
+    width: 50%;
+    background-color: #2d293cc9;
+    padding: 15px;
+    border-radius: 100px;
+
+}
+.navbar  ul{
+    padding-left:  5%;
+    padding-right:  5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.navbar  a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+
+}
+.navbar  a:hover{
+    text-decoration: none;
+    color: #B901F6;
+    text-shadow: 0px 0px 20px #B901F6;
+}
+.active{
+    color: #B901F6 !important;
+    text-shadow: 0px 0px 20px #B901F6;
+}
+
+.reload{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #B901F6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.reload:hover{
+    box-shadow: 0 0 20px #B901F6;
+}
+/* //navbar end */
+
+
+/* body */
+.child-shape1{
+    position: absolute;
+    z-index: -10000;
+    width: 350px;
+    height: 350px;
+    left: 200px;
+    top: 20px;
+   background-color:#322864;
+    border-radius: 500px;
+    filter: blur(100px);
+}
+.child-shape2{
+    position: absolute;
+    z-index: -10000;
+    width: 350px;
+    height: 350px;
+    right: 25px;
+    top: 0px;
+    background-color:#322864;
+    border-radius: 500px;
+    filter: blur(100px);
+}
+.child-shape3{
+    position: absolute;
+    z-index: -10000;
+    width: 50%;
+    height: 50vh;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+    background-color:#B901F6;
+    border-radius: 500px;
+    filter: blur(450px);
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+}
+.title-page-home{
+    font-size: 40px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    width: 70%;
+    text-align: center;
+}
+
+.body-content{
+    background-color: #1d0133bd;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+.card-body-flex {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.text-card-body{
+    font-size: 30px;
+}
+
+.card-clock, .card-kadar{
+    text-align: center;
+}
+.card-clock {
+    width: 30%;
+    background-color: #B901F6;
+    border-radius: 20px;
+}
+.card-clock-text {
+    padding: 20px; 
+    line-height: 50px;
+}
+.clock-val{
+    font-size: 40px;
+}
+.clock-icon{
+    font-size: 50px;
+}
+.hid-line{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.title-bottom{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 23px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background-color: #322864;
+}
+.card-kadar {
+    width: 100%;
+    padding: 20px;
+    line-height: 35px;
+    border-radius: 20px;
+    background-color: #26284D;
+}
+.kadar-value-text{
+    color: #B901F6;
+}
+.card-note{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-content-not{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: #26284D;
+    padding: 30px;
+}
+.note-icon{
+    color: #B901F6;
+    font-size: 50px;
+    
+}
+.container-textnote{
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+}
+.text-note{
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+}
+.note-span{
+    color: #B901F6;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+
+    /* navbar */
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 5px;
+        width: 93%;
+        z-index: 1000;
+        background-color: #2D293C;
+    }
+    
+    .reload{
+        padding: 15px;
+        background-color: #B901F6;
+        border-radius: 100px;
+        text-align: center;
+    }
+    /* //navbar */
+   
+    /* body */
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .title-page-home{
+        font-size: 25px;
+    }
+    .card-body-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-clock{
+        width: 100%;
+    }
+
+    .clock-val{
+        font-size: 40px;
+    }
+
+    .text-note{
+        font-size: 16px;
+        line-height: normal;
+    }
+    /* //body */
+
+}

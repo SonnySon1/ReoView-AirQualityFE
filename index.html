@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- bootstap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header -->
+   <head>
+       <ul class="header">
+           <li class="title">ReoView</li>
+           <nav class="navbar">
+                <li>
+                    <ul>
+                        <li><a href="" class="active"><i class="bi bi-house"></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class="bi bi-buildings"></i> About Us</a></li>
+                        <li><a href=""><i class="bi bi-telephone"></i> Contact Us</a></li>
+                    </ul>
+                </li>
+            </nav>
+            <li><a href="" class="reload">Reload</a></li>
+        </ul>
+   </head>
+    <!-- //header -->
+
+   <!-- background -->
+   <div class="shape">
+        <div class="child-shape1"></div>
+        <div class="child-shape2"></div>
+        <div class="child-shape3"></div>
+   </div>
+   <!-- //background -->
+
+   <!-- content -->
+   <main>
+       <div class="container">
+           <div class="title-container"  data-aos="fade-up" data-aos-duration="1000">
+               <h1 class="title-page-home">Pantau <span class="note-span">kondisi udara</span> di sekitar mu melalui aplikasi</h1>
+           </div>
+           <div class="body-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-body-flex">
+                    <div class="card-clock"  data-aos="flip-right" data-aos-duration="1000">
+                        <div class="card-clock-text">
+                            <i class="bi bi-clock clock-icon"></i>
+                            <h3 class="text-card-body clock-val" id="clock"></h3>
+                        </div>
+                        <div>
+                            <div class="title-bottom">Jam</div>
+                        </div>
+                    </div>
+                    <div class="card-kadar" data-aos="flip-up" data-aos-duration="1000">
+                        <p>Kadar Karbon Dioksida</p>
+                        <h3 class="text-card-body kadar-value-text">50,01 PPM</h3>
+                        <hr class="hid-line">
+                        <p>Kadar Karbon Monoksida</p>
+                        <h3 class="text-card-body kadar-value-text">00,09 PPM</h3>
+                    </div>
+                </div>
+                <div class="card-note" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-content-not">
+                        <i class="bi bi-chat-dots note-icon"></i>
+                        <div class="container-textnote">
+                            <h3 class="text-note">
+                                “Udara aman kamu bisa beraktifitas
+                                diluar ruangan dengan aman dan nyaman. <span class="note-span">Tetap jaga kesehatan</span> kamu”
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="title-bottom">Note</div>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </main>
+   <!-- //content -->
+
+
+<!-- clock function -->
+<script src="assets/js/clock.js"></script>
+
+<!-- aos animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/aosInit.js"></script>
+
+
+</body>
+</html>
