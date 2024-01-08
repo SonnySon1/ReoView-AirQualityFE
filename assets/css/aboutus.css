@@ -158,9 +158,19 @@ ul{
     
     .reload{
         padding: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
         background-color: #B901F6;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
         border-radius: 100px;
         text-align: center;
+        transition: all .3s ease-in-out;
+    }
+
+    .reload:hover{
+        box-shadow: 0 0 20px #B901F6;
     }
     /* //navbar */
 

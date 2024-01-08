@@ -4,6 +4,7 @@
 }
 
 body{
+    
     font-family: 'Inter',sans-serif;
     background-color: #040013;
     color: white;
@@ -74,7 +75,6 @@ ul{
     text-align: center;
     transition: all .3s ease-in-out;
 }
-
 .reload:hover{
     box-shadow: 0 0 20px #B901F6;
 }
@@ -82,6 +82,10 @@ ul{
 
 
 /* body */
+.contact-mb-3{
+    padding-bottom: 25px;
+}
+
 .child-shape1{
     position: absolute;
     z-index: -10000;
@@ -89,7 +93,7 @@ ul{
     height: 350px;
     left: 200px;
     top: 20px;
-   background-color:#322864;
+    background-color:#110357;
     border-radius: 500px;
     filter: blur(100px);
 }
@@ -122,101 +126,64 @@ ul{
 }
 .title-page-home{
     font-size: 40px;
-    margin-top: 90px;
     margin-bottom: 40px;
     width: 70%;
     text-align: center;
 }
 
 .body-content{
-    background-color: #1d0133bd;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 70px;
-}
-.card-body-flex {
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    gap: 20px;
-}
-
-.text-card-body{
-    font-size: 30px;
-}
-
-.card-clock, .card-kadar{
-    text-align: center;
-}
-.card-clock {
-    width: 300px;
-    background-color: #B901F6;
+    margin-top: 90px;
+    background-color: #1D0133;
+    padding: 40px;
     border-radius: 20px;
 }
-.card-clock-text {
-    padding-right: 50px;
-    padding: 20px; 
-    line-height: 50px;
-}
-.clock-val{
-    font-size: 40px;
-}
-.clock-icon{
-    font-size: 50px;
-}
-.hid-line{
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-.title-bottom{
-    position: relative;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 23px;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
-    background-color: #322864;
-}
-.card-kadar {
+.form-input{
+    padding-left: 8px;
     width: 100%;
-    padding: 20px;
-    line-height: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
-    background-color: #26284D;
-}
-.kadar-value-text{
-    color: #B901F6;
-}
-.card-note{
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.card-content-not{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background: #26284D;
-    padding: 30px;
-}
-.note-icon{
-    color: #B901F6;
-    font-size: 50px;
-    
-}
-.container-textnote{
-    display: flex;
-    justify-content: center;
-   margin-top: 20px;
-}
-.text-note{
-    font-size: 18px;
-    width: 70%;
-    text-align: center;
+    background-color: #322864;
+    border: none;
+    color: white;
 }
 .note-span{
     color: #B901F6;
 }
 
+.input-flex{
+    columns: 2;
+    justify-content: space-between;
+}
+.contact-subtitle{
+    display: flex;
+    justify-content: center;
+}
+.text-child{
+    width: 400px;
+    text-align: center;
+}
+.container-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.contact-icon{
+    background-color: #B901F6;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.contact-icon:hover{
+    box-shadow: 0 0 20px #B901F6;
+}
+/* //body */
 
 /* responsive design */
 @media screen and (max-width: 700px) {
@@ -230,6 +197,13 @@ ul{
         z-index: 1000;
         background-color: #2D293C;
     }
+
+    .title-page-home{
+        font-size: 30px;
+        margin-bottom: 40px;
+        width: 70%;
+        text-align: center;
+    }
     
     .reload{
         padding: 15px;
@@ -238,33 +212,15 @@ ul{
         text-align: center;
     }
     /* //navbar */
-   
+
     /* body */
     .container{
         padding-left: 5%;
         padding-right: 5%;
     }
-
-    .title-page-home{
-        font-size: 25px;
-    }
-    .card-body-flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .card-clock{
-        width: 100%;
-    }
-
-    .clock-val{
-        font-size: 40px;
-    }
-
-    .text-note{
-        font-size: 16px;
-        line-height: normal;
+    
+    .contact-text{
+        font-size: 12px;
     }
     /* //body */
-
 }
