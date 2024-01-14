@@ -69,7 +69,14 @@ ul{
     padding-right: 40px;
     background-color: #B901F6;
     border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
     text-align: center;
+    transition: all .3s ease-in-out;
+}
+.reload:hover{
+    box-shadow: 0 0 20px #B901F6;
 }
 /* //navbar end */
 
@@ -156,7 +163,7 @@ ul{
         text-align: center;
     }
     
-    .reload{
+    /* .reload{
         padding: 15px;
         padding-left: 40px;
         padding-right: 40px;
@@ -168,10 +175,9 @@ ul{
         text-align: center;
         transition: all .3s ease-in-out;
     }
-
     .reload:hover{
         box-shadow: 0 0 20px #B901F6;
-    }
+    } */
     /* //navbar */
 
     /* body */
